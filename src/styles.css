@@ -1,7 +1,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-color: rgb(80 22 196);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 20s ease infinite;
+    /*background-color: rgb(80 22 196);*/
 }
 
 section {
@@ -9,7 +11,11 @@ section {
 }
 
 .hero {
-    background-color: #0c1a69;
+    /*background-color: #0c1a69;*/
+    /*    background: rgb(176,15,136);
+    background: radial-gradient(circle, rgba(176,15,136,1) 0%, rgba(30,30,126,1) 59%);*/
+    background: rgb(142,0,107);
+    background: radial-gradient(circle, rgba(142,0,107,1) 0%, rgba(30,30,126,1) 59%);
     height: 100vh;
     color: white;
     font-size: 40px;
@@ -34,9 +40,9 @@ nav {
 ul {
     display: flex;
     list-style-type: none;
-    width: 900px;
+    width: 1000px;
     justify-content: space-around;
-    font-size: 20px;
+    font-size: 10px  !important;
 }
 ol {
     align-content: center;
@@ -81,6 +87,7 @@ p {
 }
 
 .button {
+    float: left;
     width: 200px;
     height: 55px;
     border-radius: 30px;
@@ -90,6 +97,7 @@ p {
     font-weight: 300;
     padding-top: 5px;
     margin-top: 20px;
+    margin-left:50px;
 }
 
 .button:hover {
@@ -173,6 +181,7 @@ p {
     box-shadow: 10px 10px 30px #130cb5;
     margin: 30px;
     background-color: #ffd800;
+
 }
 .project-car {
     width: 700px;
@@ -199,7 +208,18 @@ p {
     width: 250px;
     border-radius: 125px;
 }
-
+.j-image {
+    width: 550px;
+    height:400px;
+    margin: 25px;
+    border-radius: 0px;
+}
+.j1-image {
+    width: 700px;
+    height: 500px;
+    margin: 25px;
+    border-radius: 0px;
+}
 hr {
     margin-left: 20px;
     margin-right: 20px;
@@ -261,7 +281,7 @@ a {
     transition: opacity 0.4s ease-in-out;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
     .hamburger {
         display: block;
         border: 0;
@@ -286,7 +306,18 @@ a {
         flex-direction: column-reverse;
         background-color: #2b2c38;
     }
-
+    .j-image {
+        width: 250px;
+        height: 100px;
+        margin: 25px;
+        border-radius: 0px;
+    }
+    .j1-image {
+        width: 350px;
+        height: 200px;
+        margin: 25px;
+        border-radius: 0px;
+    }
     .logo {
         display:none;
     }
@@ -297,3 +328,39 @@ a{
     color:white;
     font-size:20px;
 }
+@keyframes gradient {
+    0% {
+        background-position: 0% 75%;
+    }
+
+    50% {
+        background-position: 100% 75%;
+    }
+
+    100% {
+        background-position: 0% 75%;
+    }
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px black;
+    border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #e78632;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.3) 20%,transparent 20%,transparent 40%,rgba(255, 255, 255, 0.3) 40%,rgba(255,255,255,.3) 60%,transparent 60%,transparent 80%,rgba(255, 255, 255, 0.3) 80%);
+    border-radius: 10px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #b30000;
+    }
+
