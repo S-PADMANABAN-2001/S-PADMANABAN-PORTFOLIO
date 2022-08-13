@@ -3,6 +3,7 @@ body {
     margin: 0;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     animation: gradient 20s ease infinite;
+    scroll-behavior: smooth;
     /*background-color: rgb(80 22 196);*/
 }
 
@@ -193,6 +194,13 @@ p {
     background-color: #ffd800;
 
 }
+.ex-card{
+    width: 1000px;
+    height: auto;
+    box-shadow: 10px 10px 30px #130cb5;
+    margin: 30px;
+    background-color: #ffd800;
+}
 .project-car {
     width: 700px;
     height: 800px;
@@ -203,6 +211,7 @@ p {
 
 .project-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -305,6 +314,10 @@ a {
 .x1-image {
     width: 600px;
     height: 400px;
+}
+.x11-image {
+    width: 400px;
+    height: 250px;
 }
 
 .x3-image {
